@@ -827,13 +827,13 @@ header .song_side .popular_artists .item li img {
     }
 
     header .song_side nav .search {
-        width: 50%;
+        width: 56%;
         height: 60%;
     }
 
-    /* header .song_side nav .search :-moz-placeholder{
-        margin-top: -30px;
-    } */
+    header .song_side nav .search :-moz-placeholder{
+        display: none;
+    }
 
 
     header .song_side nav ul li span {
