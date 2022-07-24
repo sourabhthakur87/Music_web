@@ -878,15 +878,8 @@ header .song_side .popular_artists .item li img {
         color: red;
         margin: 5px;
     }
-    #iconress2{
-        display: block;
-    }
-}
 
-#iconress2{
-    display: none;
-}
-header .master_play .res .iconres2 i{
-    color: white;
-    margin: 5px;
+    .iconres i{
+        display: none;
+    }
 }
