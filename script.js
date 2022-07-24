@@ -167,6 +167,7 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
     songTitles.forEach((elss)=>{
         let {songName}=elss;
         title.innerHTML = songName;
+        download.setAttribute("download",songName)
     });
 
     makeAllBackground();
