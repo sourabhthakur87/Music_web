@@ -820,7 +820,7 @@ header .song_side .popular_artists .item li img {
         margin-top: 10px;
         width: 100%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     header .song_side nav ul {
@@ -833,6 +833,7 @@ header .song_side .popular_artists .item li img {
     header .song_side nav .search {
         width: 75%;
         height: 45%;
+        margin-right: 40px;
     }
 
     header .song_side nav .search :-moz-placeholder{
@@ -885,5 +886,11 @@ header .song_side .popular_artists .item li img {
 
     .iconres i{
         display: none;
+    }
+    header .song_side nav .user img{
+        margin: -36px;
+        width: 50px;
+        height: 50px;
+        border: 50%;
     }
 }
