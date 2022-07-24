@@ -817,17 +817,18 @@ header .song_side .popular_artists .item li img {
     }
 
     header .song_side nav {
-        margin-top: 10px;
+        margin-top: 20px;
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
     }
 
     header .song_side nav ul {
-        margin-top: 10px;
+        /* margin-top: 10px; */
         display: flex;
         flex-direction: column;
-        margin: 20px;
+        margin: 10px;
+        justify-content: space-evenly;
     }
 
     header .song_side nav .search {
@@ -888,9 +889,13 @@ header .song_side .popular_artists .item li img {
         display: none;
     }
     header .song_side nav .user img{
-        margin: -36px;
+        
         width: 50px;
         height: 50px;
         border: 50%;
+        width: 50px;
+        height: 50px;
+        border: 50%;
+        margin: -10px -29px 0px -35px;
     }
 }
