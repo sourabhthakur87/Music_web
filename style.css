@@ -282,7 +282,7 @@ header .master_play .res h5 .subtitle {
 header .master_play .icon {
     font-size: 20px;
     color: white;
-    margin: 0px 20px 0px 40px;
+    margin: 10px 10px 0px 40px;
     outline: none;
     display: flex;
     align-items: center;
