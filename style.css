@@ -182,7 +182,7 @@ header .master_play {
     padding: 0px 20px;
 }
 
-header .master_play .wave {
+header .master_play .res .wave {
     width: 30px;
     height: 30px;
     /* border: 1px solid white; */
@@ -192,7 +192,7 @@ header .master_play .wave {
     margin-right: 10px;
 }
 
-header .master_play .wave .wave1 {
+header .master_play .res .wave .wave1 {
     width: 3px;
     height: 10px;
     background: #36e2ec;
@@ -202,29 +202,29 @@ header .master_play .wave .wave1 {
     /* animation: wave .5s linear infinite; */
 }
 
-header .master_play .wave .wave1:nth-child(2) {
+header .master_play .res .wave .wave1:nth-child(2) {
     height: 13px;
     margin-right: 3.5px;
     animation-delay: .4s;
 }
 
-header .master_play .wave .wave1:nth-child(3) {
+header .master_play .res .wave .wave1:nth-child(3) {
     height: 8px;
     animation-delay: .8s;
 
 }
 
 /* Java script classes */
-header .master_play .active1 .wave1 {
+header .master_play .res .active1 .wave1 {
     animation: wave .5s linear infinite;
 
 }
 
-header .master_play .active1 .wave1:nth-child(2) {
+header .master_play .res .active1 .wave1:nth-child(2) {
     animation-delay: .4s;
 }
 
-header .master_play .active1 .wave1:nth-child(3) {
+header .master_play .res .active1 .wave1:nth-child(3) {
     animation-delay: .8s;
 
 }
@@ -247,13 +247,17 @@ header .master_play .active1 .wave1:nth-child(3) {
 }
 
 
+header .master_play .res {
+    display: flex;
+}
 
-header .master_play img {
+
+header .master_play .res img {
     width: 35px;
     height: 35px;
 }
 
-header .master_play h5 {
+header .master_play .res h5 {
     width: 130px;
     /* height: 35px; */
     /* border: 1px solid white; */
@@ -266,7 +270,7 @@ header .master_play h5 {
     font-size: 13px;
 }
 
-header .master_play h5 .subtitle {
+header .master_play .res h5 .subtitle {
     font-size: 11px;
     color: #4c5262;
     width: 100%;
@@ -284,13 +288,17 @@ header .master_play .icon {
     align-items: center;
 }
 
-header .master_play .icon .fa {
+.header .master_play .icon .iconres {
+    display: flex;
+}
+
+header .master_play .icon .iconres .fa {
 
     cursor: pointer;
     outline: none;
 }
 
-header .master_play .icon .shuffle {
+header .master_play .icon .iconres .shuffle {
 
     font-size: 17px;
     margin-right: 10px;
@@ -300,13 +308,13 @@ header .master_play .icon .shuffle {
     align-items: center; */
 }
 
-header .master_play .icon #download_music {
+header .master_play .icon .iconres #download_music {
 
     font-size: 20px;
     margin-left: 10px;
 }
 
-header .master_play .icon .fa:nth-child(3) {
+header .master_play .icon .iconres .fa:nth-child(3) {
     border: 1px solid rgb(105, 105, 105, .1);
     border-radius: 50%;
     padding: 1px 5px 0px 7px;
@@ -321,7 +329,7 @@ header .master_play span {
     font-weight: 400;
 }
 
-header .master_play #currentStart {
+header .master_play  #currentStart {
     margin: 0px 0px 0px 20px;
 }
 
@@ -759,12 +767,14 @@ header .song_side .popular_artists .item li img {
 
 
 
+
 @media screen and (max-width:500px) {
 
-    body{
+    body {
         height: 100%;
     }
-    header .menu_side{
+
+    header .menu_side {
         display: none;
     }
 
@@ -784,12 +794,16 @@ header .song_side .popular_artists .item li img {
     }
 
 
-    
+
     header .song_side::before {
         content: "";
         position: absolute;
         width: 100%;
         height: 100%;
+        background: url(./img/bg.png);
+        background-size: 400px;
+        background-repeat: no-repeat;
+        z-index: -1;
     }
 
     header .song_side nav {
@@ -798,6 +812,7 @@ header .song_side .popular_artists .item li img {
         align-items: center;
         justify-content: space-between;
     }
+
     header .song_side nav ul {
         margin-top: 10px;
         display: flex;
@@ -813,5 +828,33 @@ header .song_side .popular_artists .item li img {
         width: 50%;
         height: 60%;
     }
-    
+
+
+    header .song_side nav ul li span {
+        display: none;
+    }
+
+    .header .master_play .vol {
+        display: none;
+    }
+
+    header .master_play .vol .fa {
+        display: none;
+    }
+
+    header .master_play #currentStart,
+    #currentEnd {
+        margin: -38px 4px 0px -18px;
+    }
+
+    header .master_play #currentEnd {
+        margin: -38px 0px 0px -18px;
+    }
+
+    header .master_play .bar {
+        margin-top: -10px;
+        margin-bottom: 30px;
+        width: 300px;
+    }
+
 }

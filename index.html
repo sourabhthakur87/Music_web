@@ -294,6 +294,7 @@
 
 
         <div class="master_play">
+            <div class="res">
 
                 <div class="wave" id="wave">
                     <div class="wave1"></div>
@@ -305,20 +306,30 @@
                     Vande mataram
                     <div class="subtitle">Bankim Chanra </div>
                 </h5>
-            <div class="icon">
-                <i class="fa shuffle fa-music" aria-hidden="true"></i>
-                <i class="fa fa-step-backward" aria-hidden="true" id="back"></i>
-                <i class="fa fa-play" aria-hidden="true" id="masterPlay"></i>
-                <i class="fa fa-step-forward" aria-hidden="true" id="next"></i>
-                <i class="fa fa-cloud-download" aria-hidden="true" id="download_music"></i>
-
-                <span id="currentStart">0:00</span>
-                <div class="bar">
-                    <input type="range" id="seek" min="0" max="100">
-                    <div class="bar2" id="bar2"></div>
-                    <div class="dot"></div>
+                <div class="iconres2" style="display: none;">
+                    <i class="fa shuffle fa-music" aria-hidden="true"></i>
+                    <i class="fa fa-step-backward" aria-hidden="true" id="back"></i>
+                    <i class="fa fa-play" aria-hidden="true" id="masterPlay"></i>
+                    <i class="fa fa-step-forward" aria-hidden="true" id="next"></i>
+                    <i class="fa fa-cloud-download" aria-hidden="true" id="download_music"></i>
                 </div>
-                <span id="currentEnd">0:30</span>
+            </div>
+            <div class="icon">
+                <div class="iconres">
+                    <i class="fa shuffle fa-music" aria-hidden="true"></i>
+                    <i class="fa fa-step-backward" aria-hidden="true" id="back"></i>
+                    <i class="fa fa-play" aria-hidden="true" id="masterPlay"></i>
+                    <i class="fa fa-step-forward" aria-hidden="true" id="next"></i>
+                    <i class="fa fa-cloud-download" aria-hidden="true" id="download_music"></i>
+                </div>
+                        <span id="currentStart">0:00</span>
+                        <div class="bar">
+                            <input type="range" id="seek" min="0" max="100">
+                            <div class="bar2" id="bar2"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <span id="currentEnd">0:30</span>
+
                 <div class="vol">
                     <i class="fa  fa-volume-up" aria-hidden="true" id="vol_icon"></i>
                     <input type="range" min="0" max="100" id="vol">
