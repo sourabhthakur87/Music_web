@@ -105,6 +105,23 @@ masterPlay.addEventListener("click", () => {
   }
 });
 
+let playBtn=document.getElementById("playBtn");
+playBtn.addEventListener("click", () => {
+  if (music.paused || music.currentTime <= 0) {
+    music.play();
+    wave.classList.add("active1");
+
+    masterPlay.classList.remove("fa-play");
+    masterPlay.classList.add("fa-pause");
+  } else {
+    music.pause();
+    wave.classList.remove("active1");
+    masterPlay.classList.add("fa-play");
+    masterPlay.classList.remove("fa-pause");
+  }
+});
+
+
 
 const makeAllBackground=()=>{
     Array.from(document.getElementsByClassName("songItem")).forEach((el)=>{
