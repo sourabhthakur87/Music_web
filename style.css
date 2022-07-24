@@ -290,6 +290,7 @@ header .master_play .icon {
 
 .header .master_play .icon .iconres {
     display: flex;
+    align-items: center;
 }
 
 header .master_play .icon .iconres .fa {
@@ -308,14 +309,16 @@ header .master_play .icon .iconres .shuffle {
     align-items: center; */
 }
 
-header .master_play .icon .iconres #download_music {
 
+header .master_play .icon .iconres #download {
+    color: white;
     font-size: 20px;
     margin-left: 10px;
+    margin-top: -5px;
 }
 
 header .master_play .icon .iconres .fa:nth-child(3) {
-    border: 1px solid rgb(105, 105, 105, .1);
+    /* border: 1px solid rgb(105, 105, 105, .1); */
     border-radius: 50%;
     padding: 1px 5px 0px 7px;
     margin: 0px 5px;
@@ -327,6 +330,7 @@ header .master_play span {
     /* border: 1px solid white; */
     font-size: 11px;
     font-weight: 400;
+    margin-top: -5px;
 }
 
 header .master_play #currentStart {

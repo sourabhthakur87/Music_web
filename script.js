@@ -142,6 +142,7 @@ const makeAllplay=()=>{
 
 let index = 0;
 let poster_master_play = document.getElementById("poster_master_play");
+let download = document.getElementById("download");
 let title = document.getElementById("title");
 
 
@@ -149,6 +150,7 @@ Array.from(document.getElementsByClassName("playListPlay")).forEach((e) => {
   e.addEventListener("click", (el) => {
     index = el.target.id;
     // console.log(abc);
+    download.href=`audio/${index}.mp3`;
     music.src = `audio/${index}.mp3`;
     poster_master_play.src = `img/${index}.jpg`;
     music.play();
