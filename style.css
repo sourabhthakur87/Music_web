@@ -546,7 +546,7 @@ header .song_side nav .search .search_results .card {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    background: rgb(184, 184, 184, .1);
+    background: rgb(5, 4, 4);
     margin-bottom: 5px;
     text-decoration: none;
     display: none;
