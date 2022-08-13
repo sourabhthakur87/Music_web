@@ -1,1 +1,1 @@
-This Music Website is made for project submission in JoVAC Course
+This Music Website is made as project for JoVAC Course.
